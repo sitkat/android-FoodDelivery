@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="15dp"
+    android:clickable="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Дата заказа: "
+                android:textAlignment="center"
+                android:textColor="@color/buttonText"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10/04/2022"
+                android:textColor="@color/buttonText"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear1"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Адрес: "
+                android:textAlignment="center"
+                android:textColor="@color/buttonText"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moscow"
+                android:textColor="@color/buttonText"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Сумма: "
+                android:textAlignment="center"
+                android:textColor="@color/buttonText"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/txtSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2000 ₽"
+                android:textColor="@color/buttonText"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

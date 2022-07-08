@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="UI.MainActivity"
+    style="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/applogodesc" />
+
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:text="Уже есть аккаунт? Войти."
+        android:textAllCaps="false"
+        android:textColor="@color/buttonText"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/main_join_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_login_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textColor="@color/buttonText"
+        android:textSize="22dp" />
+
+</RelativeLayout>
